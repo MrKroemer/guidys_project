@@ -1,12 +1,12 @@
 .header{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border: 1px solid gray;
-    height: 114px;
-    position: fixed;
-    width: 100%;
-    background-color: #ffffff8c;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 114px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff8c;
 }
 
 .header__logo{ 
@@ -27,10 +27,10 @@
 .header__item-menu{
   text-decoration: none;
   font-family: inter, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   color: #263c70ff;
-  padding: 21px;
+  padding: 18px;
 }
 
 .header__item-menu:hover{
@@ -44,23 +44,91 @@
 }
 
 .main__image{
+  position: absolute;
+  z-index: -1;
+  top: 0;
   width: 100%;
 }
 
 .main__content{
-    width: 30%;
-    position: relative;
-    bottom: 543px;
-    left: 61px;
-    color: #fff;
-    font-family: 'Inter';
+  display: flex;
+  flex-direction: column;
+  width: 36%;
+  position: fixed;
+  top: 164px;
+  left: 61px;
+  z-index: 7;
+  color: #fff;
+  font-family: 'Inter';
 }
 
 .main__title{
-  font-size: 66px;
+  height: 77px;
+  font-size: 3.5rem;
+  text-shadow: 0px 3px 14px #524e4e;
+  font-weight: 600;
 }
 
 .main__subtitle{
-    font-size: 32px;
-    font-weight: normal;
+  font-size: 1.7rem;
+  font-weight: normal;
+  text-shadow: 0px 3px 14px #524e4e;
+}
+
+.main__where{
+  position: fixed;
+  top: 428px;
+  left: 59px;
+  border-radius: 20px;
+  background-color: #263c70ff;
+  padding: 14px 23px 64px 23px;
+}
+
+.main__form{
+  display: flex;
+  column-gap: 22px;
+}
+
+.main__input{
+  border-radius: 5px;
+  padding: 10px 5px;
+  border-style: none;
+  font-family: 'Inter';
+  font-weight: 600;
+  text-align: center;
+  font-size: 1rem;
+  color: #263c70ff;
+}
+
+::placeholder{
+  color: #263c70ff;
+}
+
+.main__button{
+  background-color: #1593ffff;
+  color: #fff;
+  border-style: none;
+  border-radius: 20px;
+  width: 129px;
+  font-family: 'Inter';
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.main__button:hover{
+  background-color: rgb(52, 155, 245);
+  opacity: 0.6px;
+}
+
+.main__paragraph{
+  position: absolute;
+  top: 58px;
+  left: 39px;
+  color: #fff;
+  font-family: 'Inter';
+  font-size: 0.9rem;
+}
+
+.main__filter{
+  color: #fff;
 }
